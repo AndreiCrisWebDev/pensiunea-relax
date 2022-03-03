@@ -468,7 +468,7 @@
     margin-right: 10px;
   }
   .prezentare-camere .image-container .image-container-3-type figure:nth-child(4) {
-    background-image: url(/img/apartament-5.jpeg);
+    background-image: url(/img/apartament5.jpeg);
     width: 100%;
     height: 53px;
     background-size: cover;
@@ -483,6 +483,18 @@
   }
   .prezentare-camere .second-container > figure {
     background-image: url(/img/camera-dubla.jpeg);
+  }
+  .prezentare-camere .third-container > figure {
+    background-image: url(/img/cameraTripla-1.jpeg);
+  }
+  .prezentare-camere .forth-container > figure {
+    background-image: url(/img/camera-dubla3.jpeg);
+  }
+  .prezentare-camere .foisor-container > figure {
+    background-image: url(/img/terasa4.jpeg);
+  }
+  .prezentare-camere .foisor-container > figure .image-container-3-type > figure :nth-child(1) {
+    background-image: url(/img/terasa2.jpeg);
   }
 }
 

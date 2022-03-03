@@ -263,8 +263,7 @@ body {
                     margin: auto;
                     border: 10px solid #F8F4EB;
                     background-image: url(/img/apartament-1.jpeg);
-                    background-position: center;
-                    
+                    background-position: center;  
                 }
 
                 .image-container-3-type{
@@ -296,29 +295,47 @@ body {
                         }
 
                         &:nth-child(4){
-                            @include small-image-container-3-pictures(url(/img/apartament-5.jpeg));
+                            @include small-image-container-3-pictures(url(/img/apartament5.jpeg));
                             margin-right: 10px;  
                         }
                     }
                     
                 }
-                div.extra-img>figure{
+                div.extra-img>figure {
                     height:33px !important;
                     &:nth-child(1){
                         background-image: url(/img/camera-dubla.jpeg);
-                    }
-
-        
+                    }        
                 }      
         }
         /////imaginea principala pentru camera dubla 
-        .second-container > figure{
+        .second-container > figure {
             background-image: url(/img/camera-dubla.jpeg);
+        }
+        
+        ///// imaginea principala pentu camerea triplate
+        .third-container > figure {
+            background-image: url(/img/cameraTripla-1.jpeg);
+        }
 
+        ///// imagine principala pentru apartament
+        .forth-container > figure {
+            background-image: url(/img/camera-dubla3.jpeg);
+        }
 
-        } 
+        ///// imagine principala pentru foisor ,gratar etc
+        .foisor-container > figure {
+            background-image: url(/img/terasa4.jpeg);
+            
+            .image-container-3-type > figure {
+                :nth-child(1){
+                 background-image: url(/img/terasa2.jpeg);  
+                 }
+            }
+         }
     }
 }
+
  @media screen and (min-width: 768px){
      
     header {
@@ -369,7 +386,7 @@ body {
     }
 
     .prezentare-generala{
-        display:flex;
+        display: flex;
         margin-top:-100px;
         
             div{
@@ -380,14 +397,12 @@ body {
     }
 
     .despre-noi{
-        margin:150px auto;
-        max-width:1140px;
+        margin: 150px auto;
+        max-width: 1140px;
         display: flex;
         align-items: center;
         justify-content: space-around;
         
-
-
         figure{
             width: 50%;
             max-height: 100%;
@@ -406,23 +421,23 @@ body {
              width: 50%;
              float: right;
              margin: 0;
+
             h5{
-               
                 font-size:20px;
                 padding-left: 40px;
                 padding-right: 40px;
             }
 
             h1{
-                font-size:50px;
+                font-size: 50px;
             }
 
             p{
-                padding:0 30px;
+                padding: 0 30px;
             }
             
             button{
-                margin-top:50px;
+                margin-top: 50px;
             }
         }
     }
@@ -463,9 +478,7 @@ body {
                 
                     h1{
                         font-size:44px;
-
                     }
-                
                 }
         }
 }
@@ -483,8 +496,7 @@ body {
             }
 
             header>#bk_container>div{
-                margin: 0;
-               
+                margin: 0;  
             }   
             
             
