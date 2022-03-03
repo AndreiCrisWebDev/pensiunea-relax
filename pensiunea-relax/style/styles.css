@@ -1,7 +1,3 @@
-body {
-  background-color: #7f7a7a;
-}
-
 @media screen and (min-width: 0px) {
   header {
     width: 100%;
@@ -407,9 +403,8 @@ body {
     display: flex;
   }
   .prezentare-camere .image-container {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    margin: auto;
+    padding-bottom: 120px;
   }
   .prezentare-camere .image-container h3 {
     font-family: 'Playfair Display';
@@ -423,8 +418,7 @@ body {
   .prezentare-camere .image-container h5 {
     font-family: 'Open Sans';
     font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
+    font-weight: 900;
     line-height: 22px;
     letter-spacing: 0em;
     text-align: center;
@@ -432,14 +426,14 @@ body {
   .prezentare-camere .image-container > figure {
     max-width: 1140px;
     height: 450px;
-    margin: 10px;
+    margin: auto;
+    border: 10px solid #F8F4EB;
     background-image: url(/img/apartament-1.jpeg);
     background-position: center;
   }
   .prezentare-camere .image-container .image-container-3-type {
     max-width: 1140px;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin: auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -450,24 +444,45 @@ body {
   }
   .prezentare-camere .image-container .image-container-3-type figure:nth-child(1) {
     background-image: url(/img/apartament-2.jpeg);
-    height: 150px;
-    min-height: 47px;
     width: 100%;
-    margin-right: 10px;
+    height: 53px;
+    background-size: cover;
     background-position: center;
+    margin-right: 10px;
+    margin-left: 10px;
   }
   .prezentare-camere .image-container .image-container-3-type figure:nth-child(2) {
-    background-image: url(/img/apartament-3.jpeg);
-    height: 100%;
+    background-image: url(/img/apartament-1.jpeg);
     width: 100%;
+    height: 53px;
     background-size: cover;
+    background-position: center;
     margin-right: 10px;
   }
   .prezentare-camere .image-container .image-container-3-type figure:nth-child(3) {
-    background-image: url(/img/apartament-5.jpeg);
-    height: 47.5px;
+    background-image: url(/img/apartament-3.jpeg);
     width: 100%;
+    height: 53px;
     background-size: cover;
+    background-position: center;
+    margin-right: 10px;
+  }
+  .prezentare-camere .image-container .image-container-3-type figure:nth-child(4) {
+    background-image: url(/img/apartament-5.jpeg);
+    width: 100%;
+    height: 53px;
+    background-size: cover;
+    background-position: center;
+    margin-right: 10px;
+  }
+  .prezentare-camere .image-container div.extra-img > figure {
+    height: 33px !important;
+  }
+  .prezentare-camere .image-container div.extra-img > figure:nth-child(1) {
+    background-image: url(/img/camera-dubla.jpeg);
+  }
+  .prezentare-camere .second-container > figure {
+    background-image: url(/img/camera-dubla.jpeg);
   }
 }
 

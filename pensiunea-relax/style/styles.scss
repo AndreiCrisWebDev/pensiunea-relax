@@ -1,8 +1,17 @@
+//////// LEGENDA SASS
+
+//////// PROBLEMA !!!! (un loc unde am ramas blocat si am refacut ce am putut din css si cum am considerat)
+
+//////// MOFICAT ! (pagina atata diferit fata de cea originala)
+
+//////// TREBUIE DAT O GEANA ! ( locurile unde poate nu este codul destul de dry sau nu am folotit parametri buni)
+
+
 ////importuri pt mixim
 @import "./mixin";
 // un fundal pt background
 body {
-    background-color: hsl(0, 2%, 49%);
+    /// background-color: hsl(0, 2%, 49%);
 }
 /// versiunea mobila 
 
@@ -227,6 +236,7 @@ body {
         padding-top: 50px;
         background:#F8F4EB;
 
+
             h1{
             @include camere-h1;
             }
@@ -236,7 +246,8 @@ body {
                 display:flex;
             }
             .image-container{
-                align-items:center;
+                margin: auto;
+                padding-bottom:120px;
                 
                 h3{
                     @include image-container-h3;
@@ -246,10 +257,11 @@ body {
                     @include image-container-h5;
                 }
 
-                >figure{
+                >figure{ /// main image in the container
                     max-width: 1140px;
                     height: 450px;
-                    margin: 10px;
+                    margin: auto;
+                    border: 10px solid #F8F4EB;
                     background-image: url(/img/apartament-1.jpeg);
                     background-position: center;
                     
@@ -257,55 +269,56 @@ body {
 
                 .image-container-3-type{
                     max-width: 1140px;
-                    margin-left:10px;
-                    margin-right:10px;
-                    display:flex;
-                 
-                   
+                    margin: auto;
+                    display: flex;
+                    
+
+                   /// PROBLEMA !!!!
+                   /// SITUL ORIGINAL este foarte responsiv de fiecare cand se modifica width pagini se modifica si height care cred este facut din java sau sass funtion asa ca am facut 4 templaturi  pt cele 4 media screen 
                     figure{
                         padding:0px;
                         margin:0;
-                        
-                            /// problema este ca in moment ce eu fac width: 100% min-height nu mai merge
                             
                         &:nth-child(1){
-                           
-                            background-image: url(/img/apartament-2.jpeg);
-                            height:150px;
-                            min-height:47px;
-                            width:100%;
-                            ///background-size:cover;
+                            @include small-image-container-3-pictures(url(/img/apartament-2.jpeg));
                             margin-right: 10px;
-                            background-position: center;
-                            
-                            
+                            margin-left: 10px;  
                         }
 
                         &:nth-child(2){
-                            background-image: url(/img/apartament-3.jpeg);
-                            height:100%;
-                            width:100%;
-                            background-size: cover;
-                            margin-right: 10px;
-                            
+                            @include small-image-container-3-pictures(url(/img/apartament-1.jpeg));
+                            margin-right: 10px;   
                         }
 
                         &:nth-child(3){
-                            background-image: url(/img/apartament-5.jpeg);
-                            height:47.5px;
-                            width:100%;
-                            background-size: cover;
-                            
+                            @include small-image-container-3-pictures(url(/img/apartament-3.jpeg));
+                            margin-right: 10px;  
+                        }
+
+                        &:nth-child(4){
+                            @include small-image-container-3-pictures(url(/img/apartament-5.jpeg));
+                            margin-right: 10px;  
                         }
                     }
+                    
                 }
-                
-        }
+                div.extra-img>figure{
+                    height:33px !important;
+                    &:nth-child(1){
+                        background-image: url(/img/camera-dubla.jpeg);
+                    }
 
+        
+                }      
+        }
+        /////imaginea principala pentru camera dubla 
+        .second-container > figure{
+            background-image: url(/img/camera-dubla.jpeg);
+
+
+        } 
     }
 }
- 
-
  @media screen and (min-width: 768px){
      
     header {
