@@ -5,7 +5,7 @@ body {
 @media screen and (min-width: 0px) {
   header {
     width: 100%;
-    background: url("/img/terasa 5.jpeg");
+    background: url("img/terasa5.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 255px;
@@ -200,7 +200,7 @@ body {
   .hero-section-01 #button_section_01 #whats_btn img:hover {
     fill: #F8F4EB;
     color: #ffff;
-    background-image: url("/img/whatzap_for_button1_hover.svg");
+    background-image: url("img/whatzap_for_button1_hover.svg");
   }
   .hero-section-01 #button_section_01 #location_btn {
     margin: auto;
@@ -430,9 +430,14 @@ body {
   .prezentare-camere .image-container > figure {
     max-width: 1140px;
     height: 450px;
+<<<<<<< Updated upstream:style/styles.css
     margin: auto;
     border: 10px solid #F8F4EB;
     background-image: url(/img/apartament-1.jpeg);
+=======
+    margin: 10px;
+    background-image: url("img/apartament-1.jpeg");
+>>>>>>> Stashed changes:pensiunea-relax/style/styles.css
     background-position: center;
     background-size: cover;
   }
@@ -448,7 +453,13 @@ body {
     margin: 0;
   }
   .prezentare-camere .image-container .image-container-3-type figure:nth-child(1) {
+<<<<<<< Updated upstream:style/styles.css
     background-image: url(/img/apartament-2.jpeg);
+=======
+    background-image: url(img/apartament-2.jpeg);
+    height: 150px;
+    min-height: 47px;
+>>>>>>> Stashed changes:pensiunea-relax/style/styles.css
     width: 100%;
     height: 53px;
     background-size: cover;
@@ -457,7 +468,12 @@ body {
     margin-left: 10px;
   }
   .prezentare-camere .image-container .image-container-3-type figure:nth-child(2) {
+<<<<<<< Updated upstream:style/styles.css
     background-image: url(/img/apartament-1.jpeg);
+=======
+    background-image: url(img/apartament-3.jpeg);
+    height: 100%;
+>>>>>>> Stashed changes:pensiunea-relax/style/styles.css
     width: 100%;
     height: 53px;
     background-size: cover;
@@ -465,7 +481,12 @@ body {
     margin-right: 10px;
   }
   .prezentare-camere .image-container .image-container-3-type figure:nth-child(3) {
+<<<<<<< Updated upstream:style/styles.css
     background-image: url(/img/apartament-3.jpeg);
+=======
+    background-image: url(img/apartament-5.jpeg);
+    height: 47.5px;
+>>>>>>> Stashed changes:pensiunea-relax/style/styles.css
     width: 100%;
     height: 53px;
     background-size: cover;
