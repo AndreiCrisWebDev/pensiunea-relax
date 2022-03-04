@@ -9,10 +9,13 @@
 
 ////importuri pt mixim
 @import "./mixin";
+
 // un fundal pt background
 body {
-    /// background-color: hsl(0, 2%, 49%);
+    background-color:grey;
+/// background-color: hsl(0, 2%, 49%);
 }
+
 /// versiunea mobila 
 
 @media screen and (min-width: 0px){
@@ -263,54 +266,74 @@ body {
                     margin: auto;
                     border: 10px solid #F8F4EB;
                     background-image: url(/img/apartament-1.jpeg);
-                    background-position: center;  
+                    background-position: center; 
+                    background-size: cover; 
                 }
 
-                .image-container-3-type{
+                .image-container-3-type {
                     max-width: 1140px;
                     margin: auto;
                     display: flex;
                     
-
                    /// PROBLEMA !!!!
-                   /// SITUL ORIGINAL este foarte responsiv de fiecare cand se modifica width pagini se modifica si height care cred este facut din java sau sass funtion asa ca am facut 4 templaturi  pt cele 4 media screen 
-                    figure{
+                   /// SITUL ORIGINAL este foarte responsiv de fiecare cand se modifica width pagini se modifica si height care cred este facut din java sau sass funtion asa ca am facut 4 templaturi  pt cele 4 media screen ///
+                    figure {
                         padding:0px;
                         margin:0;
-                            
-                        &:nth-child(1){
+                            ///template pt galerie
+                        &:nth-child(1) {
                             @include small-image-container-3-pictures(url(/img/apartament-2.jpeg));
                             margin-right: 10px;
                             margin-left: 10px;  
                         }
 
-                        &:nth-child(2){
+                        &:nth-child(2) {
                             @include small-image-container-3-pictures(url(/img/apartament-1.jpeg));
                             margin-right: 10px;   
                         }
 
-                        &:nth-child(3){
+                        &:nth-child(3) {
                             @include small-image-container-3-pictures(url(/img/apartament-3.jpeg));
                             margin-right: 10px;  
                         }
 
-                        &:nth-child(4){
+                        &:nth-child(4) {
                             @include small-image-container-3-pictures(url(/img/apartament5.jpeg));
                             margin-right: 10px;  
                         }
                     }
                     
                 }
+                /// exceptie pt camera dubla (4 img)
                 div.extra-img>figure {
-                    height:33px !important;
-                    &:nth-child(1){
+                     &:nth-child(1) {
                         background-image: url(/img/camera-dubla.jpeg);
                     }        
-                }      
+                }  
+                /// exceptie pt galerie terasa 
+                div.foisor > figure {
+                    &:nth-child(1){
+                        background-image: url(/img/terasa4.jpeg);
+                    }     
+                    
+                    &:nth-child(2){
+                        background-image: url(/img/terasa2.jpeg);
+                    } 
+
+                    &:nth-child(3){
+                        background-image: url(/img/terasa3.jpeg);
+                    } 
+
+                    &:nth-child(4){
+                        background-image: url(/img/terasa5.jpeg);
+                    } 
+                }  
+                
         }
         /////imaginea principala pentru camera dubla 
         .second-container > figure {
             background-image: url(/img/camera-dubla.jpeg);
+            
         }
         
         ///// imaginea principala pentu camerea triplate
@@ -324,33 +347,36 @@ body {
         }
 
         ///// imagine principala pentru foisor ,gratar etc
-        .foisor-container > figure {
-            background-image: url(/img/terasa4.jpeg);
-            
-            .image-container-3-type > figure {
-                :nth-child(1){
-                 background-image: url(/img/terasa2.jpeg);  
-                 }
+        .foisor-container {
+
+            h3 { 
+                line-height: 30px;
+                margin-bottom: 10px;
             }
-         }
+
+            figure {
+            background-image: url(/img/terasa4.jpeg);
+            }
+        }
     }
 }
+
 
  @media screen and (min-width: 768px){
      
     header {
         min-height: 97px;
         
-        #bk_container{
+        #bk_container {
             @include flexRowCenter;
             height: 97px;
          
-            figure{
+            figure {
                 margin: 0;
                 display: block;
                 padding-top: 10px;
 
-                 img{
+                 img {
                     margin: 0;
                     height: auto;
                     max-width: 391px;
@@ -358,110 +384,120 @@ body {
                 }
             } 
 
-            button{
-                margin:auto;
+            button {
+                margin: auto;
             }
 
-            figure{
+            figure {
                 min-width: 150px;
                 max-width: 284px;
                 padding-left: 45px;
                 padding-right: 10px;
-
             }
         } 
         
     }
 
-    .hero-section-01{
+    .hero-section-01 {
 
-        p{
+        p {
             @include flexCenter(center);
-            padding-left:100px;
+            padding-left: 100px;
             padding-right: 100px;
             min-width: 562px;
             max-width: 792px;
         }
-
     }
 
-    .prezentare-generala{
+    .prezentare-generala {
         display: flex;
-        margin-top:-100px;
+        margin-top: -100px;
         
             div{
-                margin-right: 50px;
-                
+                margin-right: 50px;  
             }
-
     }
 
-    .despre-noi{
+    .despre-noi {
         margin: 150px auto;
         max-width: 1140px;
         display: flex;
         align-items: center;
         justify-content: space-around;
         
-        figure{
+        figure {
             width: 50%;
             max-height: 100%;
             max-width: 467px;
             float: left;
             margin: 0;
             
-            img{
+            img {
                 display: block;
                 width: 100%;
                 margin: 0 auto;    
             }
         }
 
-        div{
+        div {
              width: 50%;
              float: right;
              margin: 0;
 
-            h5{
-                font-size:20px;
+            h5 {
+                font-size: 20px;
                 padding-left: 40px;
                 padding-right: 40px;
             }
 
-            h1{
+            h1 {
                 font-size: 50px;
             }
 
-            p{
+            p {
                 padding: 0 30px;
             }
             
-            button{
+            button {
                 margin-top: 50px;
             }
         }
     }
 
+    .prezentare-camere > .image-container{
+        padding-bottom: 100px;
+
+        >figure{
+            height: 500px;
+        }
+
+        .image-container-3-type > figure{
+            height: 150px !important;
+        }
+        div > .extra-img> figure{
+            height: 150px 
+        }
+    }
 }
 
 @media screen and (min-width: 1024px) {
     
-        #bk_container{
+        #bk_container {
             @include flexCenter(center);
             max-width: 1000px;
 
-            figure{
-                margin:0;
+            figure {
+                margin: 0;
             }
 
-            div{
+            div {
                 margin: 0;
             }
         }
     
-        .hero-section-01{
+        .hero-section-01 {
             
-                h1{
+                h1 {
                     @include flexCenter(center);
                     max-width: 960px;
                     padding-left: 100px;
@@ -470,24 +506,51 @@ body {
                 }
         }
 
-        body>.prezentare-generala{
+        body>.prezentare-generala {
             @include autoMarginLR;
             max-width: 1140px;
 
                 >div{
-                
                     h1{
-                        font-size:44px;
+                        font-size: 44px;
                     }
                 }
+        }
+
+        .prezentare-camere > h1{
+            font-size: 50px;
+        }
+
+        .extra-img > figure {
+            &:nth-child(4) {
+                margin-right:0 !important;
+            }
+        }
+
+        .image-container-3-type > figure {
+            &:nth-child(1) {
+                margin-left:0 !important;
+            }
+        }
+
+        .third-container >.image-container-3-type > figure {
+            &:nth-child(3) {
+                margin-right:0 !important;
+            }
+        }
+
+        .forth-container  >.image-container-3-type > figure {
+            &:nth-child(3) {
+                margin-right:0 !important;
+            }
         }
 }
 
  @media screen and (min-width: 1368px) {
 
-            header>#bk_container>figure{
-                padding-left:0px;
-                padding-right:0px;
+            header>#bk_container>figure {
+                padding-left: 0px;
+                padding-right: 0px;
             }
 
             .hero-section-01 > h1 {

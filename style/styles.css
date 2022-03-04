@@ -1,3 +1,7 @@
+body {
+  background-color: grey;
+}
+
 @media screen and (min-width: 0px) {
   header {
     width: 100%;
@@ -430,6 +434,7 @@
     border: 10px solid #F8F4EB;
     background-image: url(/img/apartament-1.jpeg);
     background-position: center;
+    background-size: cover;
   }
   .prezentare-camere .image-container .image-container-3-type {
     max-width: 1140px;
@@ -475,11 +480,20 @@
     background-position: center;
     margin-right: 10px;
   }
-  .prezentare-camere .image-container div.extra-img > figure {
-    height: 33px !important;
-  }
   .prezentare-camere .image-container div.extra-img > figure:nth-child(1) {
     background-image: url(/img/camera-dubla.jpeg);
+  }
+  .prezentare-camere .image-container div.foisor > figure:nth-child(1) {
+    background-image: url(/img/terasa4.jpeg);
+  }
+  .prezentare-camere .image-container div.foisor > figure:nth-child(2) {
+    background-image: url(/img/terasa2.jpeg);
+  }
+  .prezentare-camere .image-container div.foisor > figure:nth-child(3) {
+    background-image: url(/img/terasa3.jpeg);
+  }
+  .prezentare-camere .image-container div.foisor > figure:nth-child(4) {
+    background-image: url(/img/terasa5.jpeg);
   }
   .prezentare-camere .second-container > figure {
     background-image: url(/img/camera-dubla.jpeg);
@@ -490,11 +504,12 @@
   .prezentare-camere .forth-container > figure {
     background-image: url(/img/camera-dubla3.jpeg);
   }
-  .prezentare-camere .foisor-container > figure {
-    background-image: url(/img/terasa4.jpeg);
+  .prezentare-camere .foisor-container h3 {
+    line-height: 30px;
+    margin-bottom: 10px;
   }
-  .prezentare-camere .foisor-container > figure .image-container-3-type > figure :nth-child(1) {
-    background-image: url(/img/terasa2.jpeg);
+  .prezentare-camere .foisor-container figure {
+    background-image: url(/img/terasa4.jpeg);
   }
 }
 
@@ -608,6 +623,18 @@
   .despre-noi div button {
     margin-top: 50px;
   }
+  .prezentare-camere > .image-container {
+    padding-bottom: 100px;
+  }
+  .prezentare-camere > .image-container > figure {
+    height: 500px;
+  }
+  .prezentare-camere > .image-container .image-container-3-type > figure {
+    height: 150px !important;
+  }
+  .prezentare-camere > .image-container div > .extra-img > figure {
+    height: 150px;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -653,6 +680,21 @@
   }
   body > .prezentare-generala > div h1 {
     font-size: 44px;
+  }
+  .prezentare-camere > h1 {
+    font-size: 50px;
+  }
+  .extra-img > figure:nth-child(4) {
+    margin-right: 0 !important;
+  }
+  .image-container-3-type > figure:nth-child(1) {
+    margin-left: 0 !important;
+  }
+  .third-container > .image-container-3-type > figure:nth-child(3) {
+    margin-right: 0 !important;
+  }
+  .forth-container > .image-container-3-type > figure:nth-child(3) {
+    margin-right: 0 !important;
   }
 }
 
