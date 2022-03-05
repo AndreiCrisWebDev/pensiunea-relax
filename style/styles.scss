@@ -364,8 +364,7 @@ body {
         width: 100%;
 
         // un sub headear care o sa il refolosesc 
-        div{
-            &:nth-child(1) {
+          #reusable-subheader{
                 width: 100%;
                 height: 300px;
                 background-image: url(/img/terasa5.jpeg);
@@ -375,42 +374,67 @@ body {
                 @include flexCenter(center);
             
                 h1{
-                @include subHeadearH1;
+                @include servici-title-h1;
                 }
             }
-
-             &:nth-child(2) {
+            //float left
+             div:nth-child(1) {
                 padding: 10px;
 
-                    img{
+                    div:nth-child(1)img{
                         padding-top: 39px;
                         width: 100%;
                         height: 3px;
                     } 
 
                     h5{
-                        @include prezentareH5;
+                        @include prezentare-servici-h5;
                         margin-top: 28px;
                         margin-bottom: 0;
                     }
 
                     h1{
-                        @include prezentareH1;
+                        @include prezentare-servici-h1;
                         margin-top: 10px;
-                        margin-bottom: 20px;
                         padding: 0;
-                    }
-
-                    p{
-                        @include prezentareP; 
-
-                    }
+                        margin-bottom: 0;
+                    }    
              }
+             //float left
+              div:nth-child(2){
+                 padding: 10px;
+                p{
+                    @include prezentare-servici-p; 
+                    margin: 0;
+                }
+             }
+        
 
+        .prezentare-servici-box-model{
+            width: 100%;
+            margin: auto;
+            padding: 10px;
 
+            >img{
+                width: 72px;
+                margin: auto;
+                display: flex;
+                justify-content: center;
+            }
+
+            h3{
+                @include prezentare-servici-box-model-h3;
+                margin-bottom: 10px;
+            }
+
+            p{
+                @include prezentare-servici-box-model-p;
+                margin: auto 20px;
+            }
         }
-    }
+    }   
 }
+
 
 
  @media screen and (min-width: 768px){
@@ -529,7 +553,62 @@ body {
             height: 150px 
         }
     }
+
+    .prezentare-servici{
+        width: 100%;
+        ///va prezentam servicile ...
+        >div:nth-child(2) {
+            width: 100%;
+            display: flex;
+            align-content: center;
+            align-items: center;
+            justify-content: space-evenly;
+           
+            div:nth-child(1) {
+                width: 50%;
+                
+                img{
+                    display: inline-block;
+                    width: 15px;
+                    height: 3px;
+                    vertical-align: middle;
+                    padding: 0;
+                }
+
+                h1{
+                    font-size: 50px;
+                    text-align: left;
+                    font-weight: 300;
+                }
+                h5{
+                    display: inline-block;
+                    text-align: left;
+                    margin-top: 0;
+                }
+            }
+            ///left float
+            div:nth-child(2) {
+                width: 50%;
+                p{
+                    text-align: left;
+                }   
+              
+            }   
+        }
+
+        .wrap-container{
+            display:flex;
+            flex-wrap: wrap;
+
+            .prezentare-servici-box-model{
+                width: 280px;
+                padding: 50px;
+            }
+
+        }
+    }        
 }
+
 
 @media screen and (min-width: 1024px) {
     
@@ -595,6 +674,12 @@ body {
                 margin-right:0 !important;
             }
         }
+        /// nice selector !!!
+        .prezentare-servici > div:nth-child(n+2){
+                max-width: 1140px;
+                margin: auto;
+            }
+       
 }
 
  @media screen and (min-width: 1368px) {
