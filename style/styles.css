@@ -2,8 +2,9 @@
   header {
     width: 100%;
     background: url("/img/terasa 5.jpeg");
-    background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     min-height: 255px;
     max-height: 306px;
     -webkit-box-shadow: inset 0 2000px rgba(218, 154, 14, 0.9);
@@ -86,9 +87,9 @@
     height: auto;
     padding-bottom: 98px;
     background: url("/img/terasa 5.jpeg");
-    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
     -webkit-box-shadow: inset 0 2000px rgba(13, 13, 13, 0.5);
             box-shadow: inset 0 2000px rgba(13, 13, 13, 0.5);
   }
@@ -429,6 +430,7 @@
     margin: auto;
     border: 10px solid #F8F4EB;
     background-image: url(/img/apartament-1.jpeg);
+    background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
   }
@@ -539,15 +541,15 @@
     text-align: center;
     color: #fff;
   }
-  .prezentare-servici div:nth-child(1) {
+  .prezentare-servici > div:nth-child(2) {
     padding: 10px;
   }
-  .prezentare-servici div:nth-child(1) div:nth-child(1)img {
+  .prezentare-servici > div:nth-child(2) img {
     padding-top: 39px;
     width: 100%;
     height: 3px;
   }
-  .prezentare-servici div:nth-child(1) h5 {
+  .prezentare-servici > div:nth-child(2) h5 {
     font-family: 'Playfair Display';
     font-size: 16px;
     font-style: normal;
@@ -559,7 +561,7 @@
     margin-top: 28px;
     margin-bottom: 0;
   }
-  .prezentare-servici div:nth-child(1) h1 {
+  .prezentare-servici > div:nth-child(2) h1 {
     font-family: 'Playfair Display';
     font-size: 35px;
     font-style: normal;
@@ -622,6 +624,63 @@
     text-align: center;
     color: #515151;
     margin: auto 20px;
+  }
+  .prezentare-puncte-forte {
+    margin-top: 50px;
+  }
+  .prezentare-puncte-forte div {
+    margin: 50px 0;
+    background: #F8F4EB;
+    padding-bottom: 10px;
+  }
+  .prezentare-puncte-forte div figure {
+    background-image: url(/img/video_games.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    margin: 0;
+  }
+  .prezentare-puncte-forte div .forte-img-wrap-left {
+    width: 100%;
+    padding: 0;
+  }
+  .prezentare-puncte-forte div .forte-img-wrap-left h1 {
+    font-family: 'Playfair Display';
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 47px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #515151;
+    margin-top: 20px;
+    padding: 0 50px;
+  }
+  .prezentare-puncte-forte div .forte-img-wrap-left img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 33px;
+    margin: 30px auto;
+  }
+  .prezentare-puncte-forte div .forte-img-wrap-left p {
+    font-family: 'Open Sans';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #515151;
+    margin: 14.4px 40px;
+    color: #0d0d0d;
+  }
+  .prezentare-puncte-forte div:nth-child(2) > figure {
+    background-image: url(/img/gratar.png);
+  }
+  .prezentare-puncte-forte div:nth-child(3) > figure {
+    background-image: url(/img/locatie.png);
   }
 }
 
@@ -751,6 +810,7 @@
     width: 100%;
   }
   .prezentare-servici > div:nth-child(2) {
+    margin-top: 60px;
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -772,12 +832,13 @@
     width: 15px;
     height: 3px;
     vertical-align: middle;
-    padding: 0;
+    padding: 0 20px;
   }
   .prezentare-servici > div:nth-child(2) div:nth-child(1) h1 {
     font-size: 50px;
     text-align: left;
     font-weight: 300;
+    padding-right: 50px;
   }
   .prezentare-servici > div:nth-child(2) div:nth-child(1) h5 {
     display: inline-block;
@@ -800,6 +861,10 @@
   .prezentare-servici .wrap-container .prezentare-servici-box-model {
     width: 280px;
     padding: 50px;
+    margin-top: 50px;
+  }
+  .prezentare-puncte-forte {
+    width: 100%;
   }
 }
 
@@ -865,6 +930,10 @@
   .prezentare-servici > div:nth-child(n+2) {
     max-width: 1140px;
     margin: auto;
+  }
+  .prezentare-servici > div:nth-child(2) {
+    margin-top: 100px;
+    max-width: 1000px;
   }
 }
 

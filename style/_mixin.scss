@@ -313,4 +313,8 @@
     color:#515151; 
 }
 
-
+@mixin background-img {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
