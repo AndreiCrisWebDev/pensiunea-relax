@@ -512,12 +512,12 @@
   .prezentare-servici {
     width: 100%;
   }
-  .prezentare-servici #reusable-subheader {
+  .prezentare-servici .reusable-subheader {
     width: 100%;
     height: 300px;
     background-image: url(/img/terasa5.jpeg);
     background-size: cover;
-    background-position: center;
+    background-attachment: fixed;
     -webkit-box-shadow: inset 0 2000px rgba(13, 13, 13, 0.5);
             box-shadow: inset 0 2000px rgba(13, 13, 13, 0.5);
     margin: auto;
@@ -531,7 +531,7 @@
         -ms-flex-align: center;
             align-items: center;
   }
-  .prezentare-servici #reusable-subheader h1 {
+  .prezentare-servici .reusable-subheader h1 {
     font-family: 'Playfair Display';
     font-size: 50px;
     font-style: normal;
@@ -544,7 +544,7 @@
   .prezentare-servici > div:nth-child(2) {
     padding: 10px;
   }
-  .prezentare-servici > div:nth-child(2) img {
+  .prezentare-servici > div:nth-child(2) > img {
     padding-top: 39px;
     width: 100%;
     height: 3px;
@@ -628,12 +628,10 @@
   .prezentare-puncte-forte {
     margin-top: 50px;
   }
-  .prezentare-puncte-forte div {
-    margin: 50px 0;
-    background: #F8F4EB;
-    padding-bottom: 10px;
+  .prezentare-puncte-forte > div {
+    margin: 50px 0 0 0;
   }
-  .prezentare-puncte-forte div figure {
+  .prezentare-puncte-forte > div figure {
     background-image: url(/img/video_games.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -641,11 +639,22 @@
     height: 500px;
     margin: 0;
   }
-  .prezentare-puncte-forte div .forte-img-wrap-left {
+  .prezentare-puncte-forte > div .forte-img-wrap-left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     width: 100%;
     padding: 0;
+    background: #F8F4EB;
   }
-  .prezentare-puncte-forte div .forte-img-wrap-left h1 {
+  .prezentare-puncte-forte > div .forte-img-wrap-left h1 {
     font-family: 'Playfair Display';
     font-size: 35px;
     font-style: normal;
@@ -657,14 +666,14 @@
     margin-top: 20px;
     padding: 0 50px;
   }
-  .prezentare-puncte-forte div .forte-img-wrap-left img {
+  .prezentare-puncte-forte > div .forte-img-wrap-left img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     width: 33px;
     margin: 30px auto;
   }
-  .prezentare-puncte-forte div .forte-img-wrap-left p {
+  .prezentare-puncte-forte > div .forte-img-wrap-left p {
     font-family: 'Open Sans';
     font-size: 16px;
     font-style: normal;
@@ -684,17 +693,31 @@
   }
   .prezentare-puncte-forte .forte-count-wrap {
     margin-top: 0px;
+    padding-top: 50px;
+    background: #F8F4EB;
   }
   .prezentare-puncte-forte .forte-count-wrap > div {
-    background: red;
     height: 100px;
     width: 200px;
     margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 20px;
   }
   .prezentare-puncte-forte .forte-count-wrap > div h1 {
     display: inline-block;
     font-family: 'Playfair Display';
-    font-size: 67px;
+    font-size: 58px;
     font-style: normal;
     font-weight: 400;
     line-height: 30px;
@@ -704,7 +727,8 @@
     margin: 0 auto;
   }
   .prezentare-puncte-forte .forte-count-wrap > div h1 span {
-    line-height: 50px;
+    line-height: 2px;
+    position: absolute;
   }
   .prezentare-puncte-forte .forte-count-wrap > div h5 {
     font-family: 'Open Sans';
@@ -715,6 +739,83 @@
     letter-spacing: 0em;
     text-align: center;
     margin: 0px;
+    padding-top: 10px;
+  }
+  .prezentare-gallerie {
+    background-color: #fff;
+  }
+  .prezentare-gallerie img {
+    width: 109px;
+    height: 3px;
+  }
+  .prezentare-gallerie .image-container h3 {
+    line-height: 40px;
+  }
+  .prezentare-gallerie .image-container figure {
+    border-color: #fff;
+    background-image: url("/img/tearsa1.jpeg");
+  }
+  .prezentare-gallerie .image-container .extra-img figure:nth-child(1) {
+    background-image: url("/img/terasa3.jpeg") !important;
+  }
+  .prezentare-gallerie .image-container .extra-img figure:nth-child(2) {
+    background-image: url("/img/tearsa1.jpeg");
+  }
+  .prezentare-gallerie .image-container .extra-img figure:nth-child(3) {
+    background-image: url("/img/terasa2.jpeg");
+  }
+  .prezentare-gallerie .image-container .extra-img figure:nth-child(4) {
+    background-image: url("/img/terasa5.jpeg");
+  }
+  .ce-spun-clienti .grid-img-name {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: header;
+  }
+  .ce-spun-clienti h5 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2;
+    grid-area: name;
+  }
+  .ce-spun-clienti h4 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2;
+    grid-area: date;
+  }
+  .ce-spun-clienti .grid-img-logoB {
+    -ms-grid-row: 1;
+    -ms-grid-column: 5;
+    grid-area: logoBooking;
+  }
+  .ce-spun-clienti .grid-img-grade {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: grade;
+  }
+  .ce-spun-clienti .grid-img-verify {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+    grid-area: verify;
+  }
+  .ce-spun-clienti p {
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 5;
+    grid-area: comment;
+  }
+  .ce-spun-clienti .wrap-booking {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50px 50px 50px 50px;
+        grid-template-columns: 50px 50px 50px 50px;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+        grid-template-areas: "header header name name logoBooking" "header header date date . . " "grade verify . . . . " "comment comment comment  comment comment" "comment comment comment  comment comment" "comment comment comment  comment comment" "comment comment comment  comment comment";
   }
 }
 
@@ -843,6 +944,10 @@
   .prezentare-servici {
     width: 100%;
   }
+  .prezentare-servici .reusable-subheader > h1 {
+    font-size: 68px;
+    font-weight: normal;
+  }
   .prezentare-servici > div:nth-child(2) {
     margin-top: 60px;
     width: 100%;
@@ -899,6 +1004,30 @@
   }
   .prezentare-puncte-forte {
     width: 100%;
+  }
+  .prezentare-puncte-forte > div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 100px;
+  }
+  .prezentare-puncte-forte > div:not(:last-child) {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1140px;
+  }
+  .prezentare-puncte-forte > div figure {
+    width: 100%;
+  }
+  .prezentare-puncte-forte > div .forte-img-wrap-left {
+    border-top-right-radius: 180px;
+    border-bottom-right-radius: 180px;
+  }
+  .prezentare-puncte-forte > div .forte-img-wrap-left h1 {
+    font-size: 50px;
+  }
+  .prezentare-puncte-forte .forte-count-wrap {
+    margin-top: 150px;
   }
 }
 

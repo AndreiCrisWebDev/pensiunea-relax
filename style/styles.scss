@@ -354,12 +354,12 @@
         width: 100%;
 
         // un sub headear care o sa il refolosesc 
-          #reusable-subheader{
+          .reusable-subheader{
                 width: 100%;
                 height: 300px;
                 background-image: url(/img/terasa5.jpeg);
                 background-size: cover;
-                background-position: center;
+                background-attachment: fixed;
                 box-shadow: inset 0 2000px rgba(13, 13, 13, 0.5);
                 @include flexCenter(center);
             
@@ -368,10 +368,10 @@
                 }
             }
             //float left
-             >div:nth-child(2) {
+             > div:nth-child(2) {
                 padding: 10px;
 
-                    img{
+                    > img{
                         padding-top: 39px;
                         width: 100%;
                         height: 3px;
@@ -427,11 +427,9 @@
     .prezentare-puncte-forte {
         margin-top: 50px;
        
-        div { //// wrap around 
-            margin: 50px 0;
-            background: #F8F4EB;
-            padding-bottom: 10px;
-
+        >div { //// wrap around 
+            margin: 50px 0 0 0;
+        
             figure {// imaginea de fundal 
                 background-image: url(/img/video_games.png);
                 @include background-img;
@@ -440,8 +438,12 @@
             }
             ///left float
             .forte-img-wrap-left {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
                 width: 100%;
                 padding: 0;
+                background: #F8F4EB;
 
                 h1 {
                     @include prezentare-servici-h1;
@@ -475,17 +477,23 @@
 
         .forte-count-wrap {
             margin-top: 0px;
+            padding-top: 50px;
+            background: #F8F4EB;
 
             >div{
-                background: red;
                 height: 100px;
                 width: 200px;
                 margin: auto;
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                justify-content: center;
+                margin-bottom: 20px;
 
                 h1{
                     display: inline-block;
                     font-family:'Playfair Display';
-                    font-size: 67px;
+                    font-size: 58px;
                     font-style: normal;
                     font-weight: 400;
                     line-height: 30px;
@@ -493,9 +501,10 @@
                     text-align: center;
                     color:#515151;
                     margin: 0 auto;
-
+                        //// semn +
                     span{
-                        line-height: 50px;
+                        line-height: 2px;
+                        position: absolute;
                     }
                 }
 
@@ -507,18 +516,95 @@
                     line-height: 30px;
                     letter-spacing: 0em;
                     text-align: center;
-                    margin: 0px;   
+                    margin: 0px; 
+                    padding-top: 10px;  
                 }
-
             }
+        }   
+    }
+
+    .prezentare-gallerie{
+        background-color: #fff;
+        
+        img{
+            width: 109px;
+            height: 3px;
         }
         
+        .image-container {
+            h3{
+                line-height: 40px;
+            }
+            figure {
+                border-color: #fff;
+                background-image: url("/img/tearsa1.jpeg");  
+            }
+            .extra-img{
+                figure:nth-child(1){
+                    background-image: url("/img/terasa3.jpeg")!important;
+                }
+                figure:nth-child(2){
+                    background-image: url("/img/tearsa1.jpeg");
+                }
+                figure:nth-child(3){
+                    background-image: url("/img/terasa2.jpeg");
+                }
+                figure:nth-child(4){
+                    background-image: url("/img/terasa5.jpeg");
+                }
+            }
+        }   
+    }
+
+    .ce-spun-clienti{
+
+        .grid-img-name{
+            grid-area: header;
+        }
+        
+        h5{
+           grid-area: name;
+        }
+
+        h4{
+            grid-area: date;
+        }
+        
+        .grid-img-logoB{
+            grid-area: logoBooking;
+        }
+
+        .grid-img-grade{
+            grid-area: grade;
+        }
+
+        .grid-img-verify{
+            grid-area: verify;
+        }
+
+        p{
+            grid-area: comment;
+        }
+
+        .wrap-booking{
+            display: grid;
+            grid-template-columns: 50px 50px 50px 50px;
+            grid-template-rows: auto;
+            grid-template-areas: 
+            "header header name name logoBooking"
+            "header header date date . . "
+            "grade verify . . . . "
+            "comment comment comment  comment comment"
+            "comment comment comment  comment comment"
+            "comment comment comment  comment comment"
+            "comment comment comment  comment comment";
+        }
     }
 }
 
 
 
- @media screen and (min-width: 768px){
+ @media screen and (min-width: 768px) {
      
     header {
         min-height: 97px;
@@ -637,6 +723,13 @@
 
     .prezentare-servici {
         width: 100%;
+
+        .reusable-subheader > h1{
+            font-size: 68px;
+            font-weight: normal;
+        
+        }
+
         ///va prezentam servicile ...
         >div:nth-child(2) {
             margin-top: 60px;
@@ -693,11 +786,36 @@
 
     .prezentare-puncte-forte {
         width: 100%;
-        
-           
-    }
- }
+          
+       >div{
+           display: flex;
+           margin-bottom: 100px;
 
+           &:not(:last-child){
+            @include autoMarginLR;
+            max-width: 1140px;
+            }
+
+           figure {
+               width: 100%;
+           }
+           
+           .forte-img-wrap-left {
+            border-top-right-radius: 180px; 
+            border-bottom-right-radius: 180px;
+            
+                h1{
+                    font-size: 50px;
+                }
+           }
+        }
+        
+        .forte-count-wrap{
+            margin-top: 150px;
+            
+        }     
+    } 
+ }
 
 @media screen and (min-width: 1024px) {
     
