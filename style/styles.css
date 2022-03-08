@@ -682,6 +682,40 @@
   .prezentare-puncte-forte div:nth-child(3) > figure {
     background-image: url(/img/locatie.png);
   }
+  .prezentare-puncte-forte .forte-count-wrap {
+    margin-top: 0px;
+  }
+  .prezentare-puncte-forte .forte-count-wrap > div {
+    background: red;
+    height: 100px;
+    width: 200px;
+    margin: auto;
+  }
+  .prezentare-puncte-forte .forte-count-wrap > div h1 {
+    display: inline-block;
+    font-family: 'Playfair Display';
+    font-size: 67px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #515151;
+    margin: 0 auto;
+  }
+  .prezentare-puncte-forte .forte-count-wrap > div h1 span {
+    line-height: 50px;
+  }
+  .prezentare-puncte-forte .forte-count-wrap > div h5 {
+    font-family: 'Open Sans';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin: 0px;
+  }
 }
 
 @media screen and (min-width: 768px) {
