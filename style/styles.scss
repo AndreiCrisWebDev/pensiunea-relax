@@ -559,14 +559,14 @@
     .ce-spun-clienti{
 
         .grid-img-name{
-            grid-area: header;
+            grid-area: head;
         }
         
-        h5{
-           grid-area: name;
+        h4{
+           grid-area: names;
         }
 
-        h4{
+        h3{
             grid-area: date;
         }
         
@@ -588,16 +588,15 @@
 
         .wrap-booking{
             display: grid;
-            grid-template-columns: 50px 50px 50px 50px;
-            grid-template-rows: auto;
             grid-template-areas: 
-            "header header name name logoBooking"
-            "header header date date . . "
-            "grade verify . . . . "
-            "comment comment comment  comment comment"
-            "comment comment comment  comment comment"
-            "comment comment comment  comment comment"
-            "comment comment comment  comment comment";
+            "head head names names logoBooking"
+            "head head date date date"
+            "grade verify verify verify verify"
+            "comment comment comment comment comment"
+            "comment comment comment comment comment"
+            "comment comment comment comment comment"
+            "comment comment comment comment comment";
+            
         }
     }
 }
