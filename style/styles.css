@@ -7,20 +7,13 @@
     background-size: cover;
     min-height: 255px;
     max-height: 306px;
-    -webkit-box-shadow: inset 0 2000px rgba(218, 154, 14, 0.9);
-            box-shadow: inset 0 2000px rgba(218, 154, 14, 0.9);
+    box-shadow: inset 0 2000px rgba(218, 154, 14, 0.9);
   }
   header figure {
     margin: auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
     padding-top: 44px;
     padding-right: 45px;
     padding-left: 45px;
@@ -35,51 +28,33 @@
     width: 173px;
     height: 43px;
     border: 2px solid #fff;
-    font-family: 'Roboto','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: "Roboto", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
     font-weight: bolder;
     font-size: 15px;
     background-color: transparent;
     color: white;
     margin: auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
     margin-top: 38px;
   }
   header #bk_container div {
     width: 284px;
     padding-top: 10px;
     margin: auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: space-between;
+    align-items: center;
     padding-bottom: 10px;
   }
   header #bk_container div a {
     width: 284px;
     padding-top: 10px;
     margin: auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: space-between;
+    align-items: center;
     padding-bottom: 10px;
   }
   .hero-section-01 {
@@ -90,13 +65,12 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    -webkit-box-shadow: inset 0 2000px rgba(13, 13, 13, 0.5);
-            box-shadow: inset 0 2000px rgba(13, 13, 13, 0.5);
+    box-shadow: inset 0 2000px rgba(13, 13, 13, 0.5);
   }
   .hero-section-01 h2 {
     padding-top: 265px;
     margin: 0;
-    font-family: 'Playfair Display';
+    font-family: "Playfair Display";
     font-style: normal;
     font-weight: 800;
     font-size: 16px;
@@ -108,7 +82,7 @@
   .hero-section-01 h1 {
     padding-top: 29px;
     margin: auto 20px;
-    font-family: 'Playfair Display', 'sans-serif';
+    font-family: "Playfair Display", "sans-serif";
     font-weight: 100;
     font-size: 50px;
     line-height: 60px;
@@ -117,20 +91,14 @@
   }
   .hero-section-01 > img {
     margin: auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
     margin: 25px auto 25px auto;
   }
   .hero-section-01 p {
     margin: auto 20px;
-    font-family: 'Open Sans', 'sans-serif';
+    font-family: "Open Sans", "sans-serif";
     font-style: normal;
     font-weight: bolder;
     font-size: 16px;
@@ -144,35 +112,20 @@
   }
   .hero-section-01 #button_section_01 {
     margin: auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     padding-bottom: 270px;
   }
   .hero-section-01 #button_section_01 #whats_btn {
     margin: auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
     background: #F8F4EB;
     border-radius: 5px;
-    font-family: 'Open Sans';
+    font-family: "Open Sans";
     font-style: normal;
     font-weight: bolder;
     font-size: 16px;
@@ -181,8 +134,6 @@
     text-align: center;
     height: 40px;
     width: 284px;
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
     display: inline-flex;
     margin-top: 20px;
   }
@@ -196,23 +147,17 @@
   }
   .hero-section-01 #button_section_01 #whats_btn img:hover {
     fill: #F8F4EB;
-    color: #ffff;
+    color: white;
     background-image: url("/img/whatzap_for_button1_hover.svg");
   }
   .hero-section-01 #button_section_01 #location_btn {
     margin: auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
     background: #F8F4EB;
     border-radius: 5px;
-    font-family: 'Open Sans';
+    font-family: "Open Sans";
     font-style: normal;
     font-weight: bolder;
     font-size: 16px;
@@ -233,22 +178,16 @@
   }
   .hero-section-01 #button_section_01 #location_btn img:hover {
     fill: #F8F4EB;
-    color: #ffff;
+    color: white;
   }
   .hero-section-01 #button_section_01 #contact_btn {
     margin: auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
     background: #F8F4EB;
     border-radius: 5px;
-    font-family: 'Open Sans';
+    font-family: "Open Sans";
     font-style: normal;
     font-weight: bolder;
     font-size: 16px;
@@ -277,20 +216,14 @@
     width: 72px;
     height: 72px;
     margin: auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
     padding-top: 50px;
     margin-bottom: 20px;
   }
   .prezentare-generala div h1 {
-    font-family: 'Playfair Display';
+    font-family: "Playfair Display";
     font-size: 30px;
     font-style: normal;
     font-weight: 800;
@@ -302,7 +235,7 @@
     color: #515151;
   }
   .prezentare-generala div p {
-    font-family: 'Open Sans';
+    font-family: "Open Sans";
     font-size: 17px;
     font-style: normal;
     font-weight: 600;
@@ -320,7 +253,7 @@
     display: none;
   }
   .despre-noi div h5 {
-    font-family: 'Playfair Display';
+    font-family: "Playfair Display";
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -330,7 +263,7 @@
     color: #515151;
   }
   .despre-noi div h1 {
-    font-family: 'Playfair Display';
+    font-family: "Playfair Display";
     font-size: 35px;
     font-style: normal;
     font-weight: 400;
@@ -341,7 +274,7 @@
     padding: 0px 20px;
   }
   .despre-noi div p {
-    font-family: 'Open Sans';
+    font-family: "Open Sans";
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -363,18 +296,12 @@
     text-align: center;
     color: #fff;
     margin: auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
   }
   .prezentare-video {
-    aspect-ratio: 16 / 9;
+    aspect-ratio: 16/9;
     margin: auto;
     width: 100%;
     height: 100%;
@@ -389,7 +316,7 @@
     background: #F8F4EB;
   }
   .prezentare-camere h1 {
-    font-family: 'Playfair Display';
+    font-family: "Playfair Display";
     font-size: 35px;
     font-style: normal;
     font-weight: 500;
@@ -399,8 +326,6 @@
   }
   .prezentare-camere > img {
     margin: auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
   .prezentare-camere .image-container {
@@ -408,7 +333,7 @@
     padding-bottom: 120px;
   }
   .prezentare-camere .image-container h3 {
-    font-family: 'Playfair Display';
+    font-family: "Playfair Display";
     font-size: 30px;
     font-style: normal;
     font-weight: 500;
@@ -417,7 +342,7 @@
     text-align: center;
   }
   .prezentare-camere .image-container h5 {
-    font-family: 'Open Sans';
+    font-family: "Open Sans";
     font-size: 16px;
     font-weight: 900;
     line-height: 22px;
@@ -437,8 +362,6 @@
   .prezentare-camere .image-container .image-container-3-type {
     max-width: 1140px;
     margin: auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
   .prezentare-camere .image-container .image-container-3-type figure {
@@ -518,21 +441,14 @@
     background-image: url(/img/terasa5.jpeg);
     background-size: cover;
     background-attachment: fixed;
-    -webkit-box-shadow: inset 0 2000px rgba(13, 13, 13, 0.5);
-            box-shadow: inset 0 2000px rgba(13, 13, 13, 0.5);
+    box-shadow: inset 0 2000px rgba(13, 13, 13, 0.5);
     margin: auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
   }
   .prezentare-servici .reusable-subheader h1 {
-    font-family: 'Playfair Display';
+    font-family: "Playfair Display";
     font-size: 50px;
     font-style: normal;
     font-weight: 600;
@@ -550,7 +466,7 @@
     height: 3px;
   }
   .prezentare-servici > div:nth-child(2) h5 {
-    font-family: 'Playfair Display';
+    font-family: "Playfair Display";
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
@@ -562,7 +478,7 @@
     margin-bottom: 0;
   }
   .prezentare-servici > div:nth-child(2) h1 {
-    font-family: 'Playfair Display';
+    font-family: "Playfair Display";
     font-size: 35px;
     font-style: normal;
     font-weight: 600;
@@ -578,7 +494,7 @@
     padding: 10px;
   }
   .prezentare-servici div:nth-child(2) p {
-    font-family: 'Open Sans';
+    font-family: "Open Sans";
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -596,15 +512,11 @@
   .prezentare-servici .prezentare-servici-box-model > img {
     width: 72px;
     margin: auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
   .prezentare-servici .prezentare-servici-box-model h3 {
-    font-family: 'Playfair Display';
+    font-family: "Playfair Display";
     font-size: 30px;
     font-style: normal;
     font-weight: 600;
@@ -615,7 +527,7 @@
     margin-bottom: 10px;
   }
   .prezentare-servici .prezentare-servici-box-model p {
-    font-family: 'Open Sans';
+    font-family: "Open Sans";
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -640,22 +552,15 @@
     margin: 0;
   }
   .prezentare-puncte-forte > div .forte-img-wrap-left {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    justify-content: center;
+    flex-direction: column;
     width: 100%;
     padding: 0;
     background: #F8F4EB;
   }
   .prezentare-puncte-forte > div .forte-img-wrap-left h1 {
-    font-family: 'Playfair Display';
+    font-family: "Playfair Display";
     font-size: 35px;
     font-style: normal;
     font-weight: 600;
@@ -667,14 +572,12 @@
     padding: 0 50px;
   }
   .prezentare-puncte-forte > div .forte-img-wrap-left img {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     width: 33px;
     margin: 30px auto;
   }
   .prezentare-puncte-forte > div .forte-img-wrap-left p {
-    font-family: 'Open Sans';
+    font-family: "Open Sans";
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -700,23 +603,15 @@
     height: 100px;
     width: 200px;
     margin: auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
     margin-bottom: 20px;
   }
   .prezentare-puncte-forte .forte-count-wrap > div h1 {
     display: inline-block;
-    font-family: 'Playfair Display';
+    font-family: "Playfair Display";
     font-size: 58px;
     font-style: normal;
     font-weight: 400;
@@ -731,7 +626,7 @@
     position: absolute;
   }
   .prezentare-puncte-forte .forte-count-wrap > div h5 {
-    font-family: 'Open Sans';
+    font-family: "Open Sans";
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -768,73 +663,40 @@
     background-image: url("/img/terasa5.jpeg");
   }
   .ce-spun-clienti .grid-img-name {
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 2;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 2;
     grid-area: head;
   }
   .ce-spun-clienti h4 {
-    -ms-grid-row: 1;
-    -ms-grid-column: 3;
-    -ms-grid-column-span: 2;
     grid-area: names;
   }
   .ce-spun-clienti h3 {
-    -ms-grid-row: 2;
-    -ms-grid-column: 3;
-    -ms-grid-column-span: 3;
     grid-area: date;
   }
   .ce-spun-clienti .grid-img-logoB {
-    -ms-grid-row: 1;
-    -ms-grid-column: 5;
     grid-area: logoBooking;
   }
   .ce-spun-clienti .grid-img-grade {
-    -ms-grid-row: 3;
-    -ms-grid-column: 1;
     grid-area: grade;
   }
   .ce-spun-clienti .grid-img-verify {
-    -ms-grid-row: 3;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 4;
     grid-area: verify;
   }
   .ce-spun-clienti p {
-    -ms-grid-row: 4;
-    -ms-grid-row-span: 4;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 5;
     grid-area: comment;
   }
   .ce-spun-clienti .wrap-booking {
-    display: -ms-grid;
     display: grid;
-        grid-template-areas: "head head names names logoBooking" "head head date date date" "grade verify verify verify verify" "comment comment comment comment comment" "comment comment comment comment comment" "comment comment comment comment comment" "comment comment comment comment comment";
+    grid-template-areas: "head head names names logoBooking" "head head date date date" "grade verify verify verify verify" "comment comment comment comment comment" "comment comment comment comment comment" "comment comment comment comment comment" "comment comment comment comment comment";
   }
 }
-
 @media screen and (min-width: 768px) {
   header {
     min-height: 97px;
   }
   header #bk_container {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    display: -webkit-box;
-    display: -ms-flexbox;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
     display: flex;
     height: 97px;
   }
@@ -860,23 +722,15 @@
   }
   .hero-section-01 p {
     margin: auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
     padding-left: 100px;
     padding-right: 100px;
     min-width: 562px;
     max-width: 792px;
   }
   .prezentare-generala {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     margin-top: -100px;
   }
@@ -886,14 +740,9 @@
   .despre-noi {
     margin: 150px auto;
     max-width: 1140px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    align-items: center;
+    justify-content: space-around;
   }
   .despre-noi figure {
     width: 50%;
@@ -948,17 +797,10 @@
   .prezentare-servici > div:nth-child(2) {
     margin-top: 60px;
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+    justify-content: space-evenly;
   }
   .prezentare-servici > div:nth-child(2) div:nth-child(1) {
     width: 50%;
@@ -988,11 +830,8 @@
     text-align: left;
   }
   .prezentare-servici .wrap-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
   }
   .prezentare-servici .wrap-container .prezentare-servici-box-model {
     width: 280px;
@@ -1003,8 +842,6 @@
     width: 100%;
   }
   .prezentare-puncte-forte > div {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     margin-bottom: 100px;
   }
@@ -1027,19 +864,12 @@
     margin-top: 150px;
   }
 }
-
 @media screen and (min-width: 1024px) {
   #bk_container {
     margin: auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
     max-width: 1000px;
   }
   #bk_container figure {
@@ -1050,15 +880,9 @@
   }
   .hero-section-01 h1 {
     margin: auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
     max-width: 960px;
     padding-left: 100px;
     padding-right: 100px;
@@ -1096,7 +920,6 @@
     max-width: 1000px;
   }
 }
-
 @media screen and (min-width: 1368px) {
   header > #bk_container > figure {
     padding-left: 0px;
@@ -1109,5 +932,4 @@
   header > #bk_container > div {
     margin: 0;
   }
-}
-/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */
